@@ -1,0 +1,62 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "basic skill",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": [
+                        "fly me home"
+                    ]
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "ok stop"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "i have no idea what to do"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RandomResponseIntent",
+                    "slots": [],
+                    "samples": [
+                        "i need a good pickup line for parties",
+                        "what's interesting today",
+                        "what i need to know",
+                        "to tell me anything",
+                        "to say something at random"
+                    ]
+                },
+                {
+                    "name": "LaunchResponseIntent",
+                    "slots": [
+                        {
+                            "name": "nameSlot",
+                            "type": "AMAZON.GB_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "{nameSlot} speaking. i'm a much better developer",
+                        "no problem this is {nameSlot}",
+                        "don't worry my name is {nameSlot}",
+                        "my name is {nameSlot}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
